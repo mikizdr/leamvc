@@ -14,12 +14,13 @@ class Core
     public function __construct()
     {
         // echo json_encode($this->getUrl());
+
         $url = $this->getUrl();
 
         // Look in controllers for first value
         if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
             // If exists, set as controller
-            $this->currentController = cwords($url[0]);
+            $this->currentController = ucwords($url[0]);
             // Unset 0 index
             unset($url[0]);
         }
