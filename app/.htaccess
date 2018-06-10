@@ -1,0 +1,2 @@
+# Forbid access to the folder where this file is
+Options -Indexes
